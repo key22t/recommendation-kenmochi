@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    width:100%;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #A590AF;
+    background-image:linear-gradient(rgba(255,255,255,0.2) 1px, transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,0.2) 1px, transparent 1px);
+    background-size: 40px 40px;
+}
+
+.hidden{
+    display:none;
+}
+
+.page-title{
+    width: 100%;
+    box-sizing:border-box;
+    overflow:hidden;
+    background: #222;
+    padding:1px 12px;
+    font-size: 12px;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title{
+    background:linear-gradient(180deg,#cfc3ea,#896acb);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color:transparent;
+    -webkit-text-fill-color: transparent;
+
+    text-shadow: 0 0 10px rgba(255,255,255,0.05)
+}
+
+.title-links{
+    
+    display: flex;
+    align-items:center;
+    gap:10px;
+    cursor: pointer;
+    flex-shrink:0;
+}
+
+.social-icon{
+    width: 32px;
+    height:32px;
+    max-width:100%;
+    display: block;
+}
+
+main{
+    max-width:900px;
+    margin:40px auto;
+    padding:20px;
+}
+
+h1,
+h2,
+h3{
+    margin-top:0;
+}
+
+#year-options{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-top:10px;
+}
+
+#year-options.hidden{
+    display:none;
+}
+
+.year-button{
+    padding:8px 16px;
+    cursor:pointer;
+}
+
+.video-card {
+    padding: 10px;
+    background: white;
+    cursor: pointer;
+}
+
+.video-card:hover {
+    background: #f2f2f2;
+    opacity:0.8;
+}
+
+.video-card.selected{
+    outline:4px solid #6b4c75;
+}
+
+.video-card img{
+    width:100%;
+    display:block;
+}
+
+.video-info h4{
+    margin:10px 0 5px;
+}
+
+.video-info p{
+    margin:10px 0 5px;
+}
+
+#selection-count{
+    font-weight:bold;
+}
+
+button:disabled{
+    opacity:0.5;
+    cursor:not-allowed;
+}
+
+#complete-button{
+    margin-top:30px;
+}
+
+.result-video{
+    margin:20px 0;
+    padding:15px;
+    background:white;
+    border-radius:8px;
+}
+
+.result-video img{
+    width:300px;
+    max-width:100%;
+}

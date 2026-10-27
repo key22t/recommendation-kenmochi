@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>おすすめけんもち</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="page-title">
+        <h1 class="title">おすすめけんもち</h1>
+
+        <div class="title-links">
+        
+            <a href="https://x.com/rei_toya_rei" target="_blank">
+                <img src="logo-white.png" class="social-icon">
+            </a>
+
+            <a href="https://www.youtube.com/@KenmochiToya" target="_blank">
+                <img src="yt_icon_red_digital.png" class="social-icon">
+            </a>
+
+        </div>
+    </div>
+    <main>
+        <section id="create-screen">
+            <h2>おすすめを作る</h2>
+            <div class="category-select">
+                <button id="year-category">年代</button>
+            </div>
+
+            <div id="year-options" class="hidden"></div>
+
+            <section id="video-selection" class="hidden">
+                <h3 id="selection-title"></h3>
+                <p>
+                    おすすめしたい動画を選択してください。
+                </p>
+                <button id="preview-button-top" disabled>
+                    選択した動画を確認
+                </button>
+                <label>
+                    <input type="checkbox" id="exclude-shorts">
+                    ショート動画を除く
+                </label>
+                <div id="video-list"></div>
+                <p id="selection-count">
+                    選択：0本
+                </p>
+            </section>
+            <button id="preview-button-bottom" disabled>
+                選択した動画を確認
+            </button>
+        </section>
+        <section id="preview-screen" class="hidden">
+            <div id="selected-video-list"></div>
+            <button id="back-to-selection-button">
+                動画を選び直す
+            </button>
+            <button id="complete-button">
+                完成して結果を見る
+            </button>
+        </section>
+        <section id="result-screen" class="hidden">
+            <h2>おすすめ完成！</h2>
+            <div id="result"></div>
+            <button id="back-button">
+                もう一度作成する
+            </button>
+        </section>
+        <section id="shared-screen" class="hidden">
+            <h2>おすすめ動画一覧</h2>
+            <div id="shared-result"></div>
+            <button id="make-your-own-button">
+                自分も作ってみる
+            </button>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
